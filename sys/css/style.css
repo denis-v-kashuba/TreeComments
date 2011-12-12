@@ -1,0 +1,199 @@
+@import "reset.css";
+
+/* TREE CSS FILE */
+
+/* START of main */
+
+a {
+    text-decoration: none;
+    color: #1c1b42;
+}
+
+#load {
+    display: none;
+    text-align: center;
+    background: url(../img/ajax-loader.gif);
+    position: absolute;
+    top: 200px;
+    left: 170px;
+    width: 42px;
+    height: 42px;
+    text-indent: -9999em;
+}
+
+
+
+/* END of main */
+
+/* ICONS*/
+
+
+.tree-links {
+    clear: both;
+    display: block;
+    float: right;
+    padding: 5px 0px 0px 5px;
+}
+
+.tree-links span{
+    cursor: pointer;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 16px;
+}
+
+.move-up {
+    background-image: url(../img/arrow_top.png);
+
+}
+.move-down {
+    background-image: url(../img/arrow_down.png);
+}
+
+.add-leaf {
+    background-image: url(../img/action_add.png);
+}
+
+.edit-leaf {
+    background-image: url(../img/reply.png);
+}
+
+.del-leaf {
+    background-image: url(../img/action_delete.png);
+}
+
+.rem-leaf {
+    background-image: url(../img/action_remove.png);
+}
+
+.tree-hide-all {
+    background-image: url(../img/minimize.png);
+}
+
+.tree-show-all{
+    background-image: url(../img/maximize.png);
+}
+
+/* END OF ICONS */
+
+/* TREE items */
+
+
+.tree-item {
+    display: inline-block;
+    width: 500px;
+}
+
+.tree-date {
+    font-family: Georgia;
+    font-size: 12px;
+}
+
+.tree-info {
+    clear: both;
+    display: block;
+    float: left;
+    font-size: 12px;
+    padding: 0px 0px 0px 5px;
+}
+
+.tree-item:hover {
+    background-color: #d2dbff;
+}
+
+.tree-data {
+    display: block;
+    float: left;
+}
+
+.tree-level {
+    display: block;
+    float: left;
+    padding: 0px 5px 0 5px;
+}
+
+.tree-icon {
+    display: block;
+    width: 16px;
+    float: left;
+}
+
+.tree-title {
+    clear: both;
+    display: block;
+    font-family: Georgia;
+    font-weight: bold;
+    font-size: 12px;
+    padding-bottom: 3px;
+}
+
+.tree-text {
+    clear: both;
+    display: block;
+    padding: 10px 0 0 5px;
+    font-size: 14px;
+}
+
+
+
+/* END OF tree itrms */
+
+/* TREE features */
+
+#tree {
+    width: 500px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+ul#tree-main li {
+    min-height: 55px;
+    display: block;
+}
+
+.tree-open {
+    background-color: rgb(177, 255, 153);
+}
+
+.tree-closed {
+    background-color: rgba(49, 50, 255, 0.20);
+}
+
+.tree-leaf {
+    background-color: rgb(214, 255, 208);
+}
+
+.emptyTree {
+    background-color: rgba(255, 125, 131, 0.50);
+}
+
+/* END of TREE */
+
+/* ADD comments */
+
+#addComment {
+    width: 210px;
+    text-align: left;
+    position: absolute;
+    display: none;
+    margin: 20px 0px 0px 100px;
+}
+
+
+
+/* END ADD comments */
+
+
+/* EDIT comments */
+
+#editComment {
+    width: 210px;
+    text-align: left;
+    position: absolute;
+    display: none;
+    margin: 20px 0px 0px 100px;
+}
+
+
+
+/* END EDIT comments */
