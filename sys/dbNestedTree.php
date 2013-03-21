@@ -4,6 +4,7 @@ function __autoload($class) {
     require_once $class.'.php';
 }
 
+
 class dbNestedTree Extends dbConnection
 {
 
@@ -691,8 +692,8 @@ class dbNestedTree Extends dbConnection
  *@param string title for update
  *@param string text for update
  */
-
-    public function updateNode($id, $title, $text) {
+    public function updateNode($id, $title, $text) 
+    {
 
         if($id != NULL) {
 
@@ -740,8 +741,8 @@ class dbNestedTree Extends dbConnection
  *
  *@param integer id of getting element
  */
-
-    public function getStatTree($id = NULL) {
+    public function getStatTree($id = NULL) 
+    {
 
         $sql =  'SELECT lft, rgt, depth, (rgt - lft + 1) AS treeWidth FROM comments WHERE id = :id';
         $stmt = $this->db->prepare($sql);

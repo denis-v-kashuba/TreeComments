@@ -5,7 +5,7 @@ class dbConnection {
     protected static     $instance;
 
     protected $type =       'mysql';
-    protected $server =     'localhost';
+    protected $server =     '127.0.0.1';
     protected $user =       'root';
     protected $password =   'root';
     protected $database =   'db_tree';
@@ -21,10 +21,13 @@ class dbConnection {
     {
         if(!isset(self::$instance))
         {
+
             try
             {
+                
                 self::$instance = new PDO($this->type.':host=' . "$this->server" . ';dbname='. $this->database,
                                                                                         $this->user, $this->password);
+
             }
             catch(PDOException $e)
             {
